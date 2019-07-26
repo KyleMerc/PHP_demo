@@ -16,5 +16,17 @@
 
         echo "\n";
     }
+?>
 
-    
+<?php require "templates/header.php"; ?>
+    <div class="container">
+        <div class="display-1">Fibonacci</div>
+
+        <form action="Process.php" method="post">
+            <label for="">Fibonacci Number: </label>
+            <input type="text" name="fibolen">
+
+            <input type="submit" value="Submit" name="submit">
+        </form>
+    </div>
+<?php require "templates/footer.php"; ?>

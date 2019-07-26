@@ -1,66 +1,37 @@
 <?php
-require "Calc.php";
-require "Fibonacci.php";
-require "MulTable.php";
-require "Palindrome.php";
-require "Pyramid.php";
+require "templates/header.php";
 
-$menu = <<<MENU
---- Options ---
-1   Calculator
-2   Fibonacci
-3   Multiplication Table
-4   Palindrome
-5   Pyramid
----------------\n
-MENU;
+// require "Calc.php";
+// require "Fibonacci.php";
+// require "MulTable.php";
+// require "Palindrome.php";
+// require "Pyramid.php";
 
-do {
-    echo $menu;
-    $opt = readline("Choose: ");
+?>
+    <div class="container">
+        <h1 class="display-1">PHP EXERCISES</h1>
+        <div class="jumbotron">
+            <span class="display-4">Select Function</span><br /><br />
 
-    switch ($opt) {
-        case 1:
-            echo "\nCalculator\n";
-            
-            $ans1 = readline("Opr 1: ");
-            $ans2 = readline("Opr 2: ");
-            $optr = readline("Operator: ");
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="Calc.php" class="btn btn-primary">Calculator</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="Fibonacci.php" class="btn btn-primary">Fibonacci</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="MulTable.php" class="btn btn-primary">Multiplication Table</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="Palindrome.php" class="btn btn-primary">Palindrome</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="Pyramid.php" class="btn btn-primary">Pyramid</a>
+                    </li>
+                </ul>
 
-            Calculator(intval($ans1), intval($ans2), $optr);
-            break;
-        case 2:
-            echo "\nFibonacci\n";
-            
-            $fibo = readline("Length of Fibo: ");
-            
-            Fibo($fibo);
-            break;
-        case 3:
-            echo "\nMultiplication Table\n";
+        </div>
+    </div>
 
-            $len = readline("Length: ");
-
-            MulTable($len);
-            break;
-        case 4:
-            echo "\nPalindrome\n";
-
-            $word = readline("Enter Here: ");
-
-            isPalindrome($word);
-            break;
-        case 5:
-            echo "\nPyramid\n";
-
-            $len = readline("Length of the Pyramid: ");
-
-            Pyramid($len);
-            break;
-        default:
-            echo "\nInvalid Input\n";
-    }
-
-    $again = readline("\nWant to try again?(Y/N): ");
-    echo "\n";
-} while ($again == "y" || $again == "Y");
+<?php require "templates/footer.php"; ?>

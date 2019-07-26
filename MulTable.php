@@ -9,5 +9,12 @@
             echo "\n";
         }
     }
+?>
 
+
+<?php require "templates/header.php"; ?>
+    <div class="container">
+        <div class="display-1">Multiplication Table</div>
+    </div>
+<?php require "templates/footer.php"; ?>
     

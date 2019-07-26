@@ -15,3 +15,10 @@
             echo "\n";
         }
     }
+?>
+
+<?php require "templates/header.php"; ?>
+    <div class="container">
+        <div class="display-1">Pyramid</div>
+    </div>
+<?php require "templates/footer.php"; ?>
