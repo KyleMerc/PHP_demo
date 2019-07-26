@@ -19,5 +19,3 @@
                 echo "Invalid input\n";
         }
     }
-
-    Calculator(23,43,"+");

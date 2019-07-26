@@ -1,7 +1,5 @@
 <?php 
-    
-
-    function fibo($input)
+    function Fibo($input)
     {
         $res = 1;
         $temp = 0;
@@ -19,5 +17,4 @@
         echo "\n";
     }
 
-    $res = fibo(5);
     

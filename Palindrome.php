@@ -17,6 +17,5 @@
             echo "Not a Palindrome\n";
         }
     }
-    isPalindrome("Rotator");
     
     

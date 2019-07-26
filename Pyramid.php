@@ -1,14 +1,17 @@
 <?php
+    function Pyramid($input)
+    {
+        $ctr = 0;
 
-    for ($i = 0; $i < 6; $i++) {
-        echo "\t";
-        for ($j = 0; $j < $i; $j++) {
-            echo "*";
+        for ($i = $input; $i > 0; $i--) {
+            for ($j = $i; $j > 0; $j--) {
+                echo " ";
+            }
+    
+            for ($k = 0; $k <= $ctr; $k++) {
+                echo "*";
+            }
+            $ctr++;
+            echo "\n";
         }
-
-        // for ($j = 0; $j < $i; $j++) {
-        //     echo "&";
-        // }
-
-        echo "\n\n";
     }
