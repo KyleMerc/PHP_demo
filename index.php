@@ -3,6 +3,7 @@ require "Calc.php";
 require "Fibonacci.php";
 require "MulTable.php";
 require "Palindrome.php";
+require "Pyramid.php";
 
 $menu = <<<MENU
 --- Options ---
@@ -10,6 +11,7 @@ $menu = <<<MENU
 2   Fibonacci
 3   Multiplication Table
 4   Palindrome
+5   Pyramid
 ---------------\n
 MENU;
 
@@ -47,6 +49,13 @@ do {
             $word = readline("Enter Here: ");
 
             isPalindrome($word);
+            break;
+        case 5:
+            echo "\nPyramid\n";
+
+            $len = readline("Length of the Pyramid: ");
+
+            Pyramid($len);
             break;
         default:
             echo "\nInvalid Input\n";
