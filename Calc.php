@@ -4,16 +4,20 @@
     {
         switch ($optr) {
             case "+":
-                echo "Sum is " . $opr1 + $opr2 . "\n";
+                $sum = $opr1 + $opr2;
+                echo "Sum is " . $sum . "\n";
                 break;
             case "-":
-                echo "Difference is " . $opr1 - $opr2 . "\n";
+                $diff = $opr1 - $opr2;
+                echo "Difference is " . $diff . "\n";
                 break;
             case "/":
-                echo "Qoutient is " . $opr1 / $opr2 . "\n";
+                $qou = $opr1 / $opr2;
+                echo "Qoutient is " . $qou . "\n";
                 break;
             case "*":
-                echo "Product is " . $opr1 * $opr2 . "\n";
+                $prod = $opr1 * $opr2;
+                echo "Product is " . $prod . "\n";
                 break;
             default:
                 echo "Invalid input\n";

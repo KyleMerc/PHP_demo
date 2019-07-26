@@ -9,7 +9,7 @@
             }
     
             for ($k = 0; $k <= $ctr; $k++) {
-                echo "*";
+                echo " *";
             }
             $ctr++;
             echo "\n";
