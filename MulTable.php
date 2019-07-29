@@ -22,7 +22,7 @@ $interval = 9;
                 <?php
                     if (isset($_SESSION["result"])) {
                         $result = $_SESSION["result"]["out"];
-                        $cmpr = $_SESSION["result"]["size"];
+                        $interval = $_SESSION["result"]["size"];
                         $size = $_SESSION["result"]["size"] - 1;
                        // $interval = range(10, 100, 10);
 //  var_dump($_SESSION["result"]); die;
@@ -32,9 +32,9 @@ $interval = 9;
                                 <?php
                                     echo "<td>" . $data . "</td>";
 
-                                    if ($i == $size && $data % $cmpr == 0) {
+                                    if ($i == $size) {
                                         echo "</tr>";
-                                        $size += $cmpr;
+                                        $size += $interval;
                                     }
                                 ?>
                 <?php 
